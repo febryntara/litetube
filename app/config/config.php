@@ -1,6 +1,6 @@
 <?php
 // Base url
-const BASEURL = "http://localhost:8080/litetube/public";
+const BASEURL = "https://litetube-febryntara.herokuapp.com/public";
 
 // Database
 const DB_HOST = "localhost";
