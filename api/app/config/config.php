@@ -1,6 +1,6 @@
 <?php
 // Base url
-const BASEURL = "https://litetube-febryntara.vercel.app";
+const BASEURL = "https://litetube-l3260n9x7-febryntara.vercel.app";
 
 // Database
 const DB_HOST = "localhost";
