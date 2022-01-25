@@ -1,5 +1,5 @@
 <?php
 if (!session_id()) session_start();
 
-include '../app/config/config.php';
+require_once '../app/init.php';
 $app = new App();
