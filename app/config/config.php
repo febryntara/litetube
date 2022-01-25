@@ -1,6 +1,6 @@
 <?php
 // Base url
-const BASEURL = "http://localhost:8080/litetube/api/public";
+const BASEURL = "http://localhost:8080/litetube/public";
 
 // Database
 const DB_HOST = "localhost";
