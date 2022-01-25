@@ -1,4 +1,4 @@
 <?php
 
-require_once 'app/config/init.php';
+require_once 'app/config/config.php';
 header('Location:' . BASEURL);
