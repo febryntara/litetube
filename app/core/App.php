@@ -2,7 +2,7 @@
 
 class APP
 {
-  protected $controller = 'home';
+  protected $controller = 'Home';
   protected $method = 'index';
   protected $params = [];
 
@@ -12,8 +12,8 @@ class APP
 
     // mengecek controller
     if (isset($url[0])) { //mengecek apakah $_GET['url] indek ke 0 ada nilanya / tidak
-      if (file_exists('../app/controllers/' . $url[0] . '.php')) { //fungsi mengecek adanya sebuah file disebuah direktori tertentu
-        $this->controller = $url[0]; //mengatur value controller dari home menjadi nilai dari $url[0]
+      if (file_exists('../app/controllers/' . ucfirst($url[0]) . '.php')) { //fungsi mengecek adanya sebuah file disebuah direktori tertentu
+        $this->controller = ucfirst($url[0]); //mengatur value controller dari home menjadi nilai dari $url[0]
         unset($url[0]); //setelah nilai controller berubah, maka nilai $url[0] akan dihilangkan untuk membersihkan array
       }
     }

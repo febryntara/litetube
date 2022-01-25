@@ -7,8 +7,7 @@
 //   $(".nav-link").removeClass("active");
 //   $(".nav-link:first-child").addClass("active");
 // });
-
-$("#button-cari").on("click", function () {
+function search() {
   let keyword = $("#input-cari").val();
   let items = [];
   let content = "";
@@ -56,5 +55,15 @@ $("#button-cari").on("click", function () {
       $("#result-cari").html(content);
     },
   });
+}
+$("#button-cari").on("click", function () {
+  search();
   // alert(keyword);
+});
+
+$("#input-cari").keyup(function (e) {
+  if (e.keyCode == 13) {
+    search();
+    // alert("OK");
+  }
 });
