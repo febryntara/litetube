@@ -1,6 +1,6 @@
 <?php
 // Base url
-const BASEURL = "https://litetube-l3260n9x7-febryntara.vercel.app/api/public";
+const BASEURL = "http://localhost:8080/lotetube/api/public";
 
 // Database
 const DB_HOST = "localhost";
